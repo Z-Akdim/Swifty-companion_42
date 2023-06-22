@@ -26,10 +26,15 @@ export const TYPE_FONT_Famliy = {
 
 export const TYPE_SIZES = {
   FONT_SIZE_16: 16,
-  FONT_SIZE_20: 20,
+  FONT_SIZE_18: 18,
   FONT_SIZE_24: 24,
-  FONT_SIZE_36: 36,
-  FONT_SIZE_40: 40,
+  FONT_SIZE_30: 30,
+};
+
+export const TYPE_PORDER_RADIUS = {
+  BORDER_RADIUS_10: 10,
+  BORDER_RADIUS_5: 5,
+  BORDER_RADIUS_50: 50,
 };
 
 export const TYPE_GRADIENTS = {
