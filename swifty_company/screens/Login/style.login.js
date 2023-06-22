@@ -1,5 +1,9 @@
 import { StyleSheet } from "react-native";
-import { TYPE_SIZES, TYPE_FONT_Famliy } from "./../../styles/base.styles";
+import {
+  TYPE_SIZES,
+  TYPE_FONT_Famliy,
+  TYPE_PORDER_RADIUS,
+} from "./../../styles/base.styles";
 
 const Styles = StyleSheet.create({
   container: {
@@ -9,15 +13,25 @@ const Styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    marginHorizontal: 30,
     alignItems: "center",
+    justifyContent: "center",
+    gap: 20,
   },
   title: {
-    fontSize: TYPE_SIZES.FONT_SIZE_36,
+    fontSize: TYPE_SIZES.FONT_SIZE_30,
     fontFamily: TYPE_FONT_Famliy.POPPINS_BOLD,
   },
   m_h: {
-    marginHorizontal: 54,
+    marginHorizontal: 20,
+  },
+  button: {
+    width: 171,
+    height: 67,
+    backgroundColor: "black",
+    marginTop: 30,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: TYPE_PORDER_RADIUS.BORDER_RADIUS_10,
   },
 });
 

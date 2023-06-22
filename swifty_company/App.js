@@ -5,6 +5,8 @@ import Login from "./screens/Login";
 import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 import Input from "./components/Input";
+import UserCarad from "./components/userCard";
+import { View } from "react-native";
 export default function App() {
   let [fontsLoaded] = useFonts({
     "Poppins-Bold": require("./assets/fonts/Poppins-Bold.ttf"),
@@ -18,11 +20,12 @@ export default function App() {
   }
   return (
     <LinearGradient
-      colors={TYPE_GRADIENTS.LINEAR_GRADIENT_GREEN}
+      colors={TYPE_GRADIENTS.LINEAR_GRADIENT_Pink}
       style={styles.container}
     >
       {/* <Login /> */}
       <Input type="pandora" />
+      <UserCarad type="commodore" error={true} />
     </LinearGradient>
   );
 }
