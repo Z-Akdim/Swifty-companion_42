@@ -7,21 +7,26 @@ export const typeColor = (type) => {
     commodore: {
       placHoColor: "#5B835A",
       bgColor: "#E5FFE2",
+      title: "#235A16",
       borderColor: "#5D9B5B",
     },
     bois: {
       placHoColor: "#5A8383",
       bgColor: "#E2FFFF",
       borderColor: "#5B9B9B",
+      title: "#00B7BA",
+      sousTitle: "#50A697",
     },
     freax: {
       placHoColor: "#837A5A",
       bgColor: "#FEFFE1",
+      title: "#F5BC39",
       borderColor: "#B9AF56",
     },
     pandora: {
       placHoColor: "#835A7C",
       bgColor: "#FFEAF9",
+      title: "#B61282",
       borderColor: "#9B5B7A",
     },
   };
@@ -29,7 +34,8 @@ export const typeColor = (type) => {
   return Color;
 };
 
-const useGlobalStyle = () => {
+const useGlobalStyle = (type) => {
+  const Colors = typeColor(type);
   return useMemo(
     () =>
       StyleSheet.create({
@@ -39,6 +45,7 @@ const useGlobalStyle = () => {
           letterSpacing: 0.5,
           lineHeight: 30,
           textAlign: "center",
+          color: Colors.placHoColor,
         },
         Title: {
           fontFamily: TYPE_FONT_Famliy.POPPINS_BOLD,
@@ -53,7 +60,7 @@ const useGlobalStyle = () => {
           fontSize: TYPE_SIZES.FONT_SIZE_24,
         },
       }),
-    []
+    [type]
   );
 };
 
