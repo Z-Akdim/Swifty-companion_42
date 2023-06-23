@@ -24,9 +24,10 @@ const useStyle = (type) => {
       paddingVertical: 10,
     },
     imageAvatarStyle: {
+      alignItems: "center",
+      justifyContent: "center",
       height: 70,
       width: 70,
-      backgroundColor: "black",
       borderRadius: TYPE_PORDER_RADIUS.BORDER_RADIUS_50,
     },
     childOne: {
@@ -35,14 +36,14 @@ const useStyle = (type) => {
       gap: 10,
     },
     userNameStyle: {
-      fontSize: TYPE_SIZES.FONT_SIZE_20,
+      fontSize: TYPE_SIZES.FONT_SIZE_18,
       fontFamily: TYPE_FONT_Famliy.POPPINS_REGULAR,
       letterSpacing: 0.5,
       lineHeight: 30,
       textAlign: "left",
       color: Colors.placHoColor,
       textTransform: "capitalize",
-      maxWidth: 160,
+      maxWidth: 165,
     },
     popupstyle: {
       alignItems: "center",

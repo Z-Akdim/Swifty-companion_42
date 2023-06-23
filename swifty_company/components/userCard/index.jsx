@@ -1,6 +1,7 @@
 import { View, Text, Image } from "react-native";
 import useStyle from "./style.userCard";
-
+import Avatar from "../atoms/avatar";
+import img from "../../assets/tanjiro.jpg";
 const UserCarad = (props) => {
   const { type, error } = props;
   const Styles = useStyle(type);
@@ -10,7 +11,12 @@ const UserCarad = (props) => {
       <View style={Styles.contentUserCard}>
         {!error ? (
           <View style={Styles.childOne}>
-            <Image style={Styles.imageAvatarStyle} />
+            <Avatar
+              firstName="zakaria"
+              lastName="akdim"
+              img={img}
+              classNameAvatar={Styles.imageAvatarStyle}
+            />
             <Text style={Styles.userNameStyle}>zakdim</Text>
           </View>
         ) : (
