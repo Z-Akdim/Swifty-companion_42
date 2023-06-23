@@ -1,7 +1,7 @@
 import { TextInput, View } from "react-native";
 import useStyles from "./style.input";
-import SearchIcon from "../icons/searchIcon";
 import { Input as RNEInput } from "@rneui/base";
+import SearchIcon from "../atoms/icons/searchIcon/index.jsx";
 
 const Input = (props) => {
   const { type } = props;
