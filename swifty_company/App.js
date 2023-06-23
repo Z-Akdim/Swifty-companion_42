@@ -8,6 +8,7 @@ import Input from "./components/Input";
 import UserCarad from "./components/userCard";
 import { View } from "react-native";
 export default function App() {
+  const type = "commodore";
   let [fontsLoaded] = useFonts({
     "Poppins-Bold": require("./assets/fonts/Poppins-Bold.ttf"),
     "Poppins-ExtraBold": require("./assets/fonts/Poppins-ExtraBold.ttf"),
@@ -24,8 +25,8 @@ export default function App() {
       style={styles.container}
     >
       {/* <Login /> */}
-      <Input type="pandora" />
-      <UserCarad type="commodore" error={true} />
+      <Input type={type} />
+      <UserCarad type={type} error={false} />
     </LinearGradient>
   );
 }
