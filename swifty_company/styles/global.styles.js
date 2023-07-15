@@ -9,6 +9,7 @@ export const typeColor = (type) => {
       bgColor: "#E5FFE2",
       title: "#235A16",
       borderColor: "#5D9B5B",
+      homeIconColor: "#BBE2B8",
     },
     bois: {
       placHoColor: "#5A8383",
@@ -16,18 +17,21 @@ export const typeColor = (type) => {
       borderColor: "#5B9B9B",
       title: "#00B7BA",
       sousTitle: "#50A697",
+      homeIconColor: "#B8E2DF",
     },
     freax: {
       placHoColor: "#837A5A",
       bgColor: "#FEFFE1",
       title: "#F5BC39",
       borderColor: "#B9AF56",
+      homeIconColor: "#E2DBB8",
     },
     pandora: {
       placHoColor: "#835A7C",
       bgColor: "#FFEAF9",
       title: "#B61282",
       borderColor: "#9B5B7A",
+      homeIconColor: "#FFEAF9",
     },
   };
   const Color = colors[type];
@@ -40,7 +44,7 @@ const useGlobalStyle = (type) => {
     () =>
       StyleSheet.create({
         Paragraph: {
-          fontSize: TYPE_SIZES.FONT_SIZE_20,
+          fontSize: TYPE_SIZES.FONT_SIZE_18,
           fontFamily: TYPE_FONT_Famliy.POPPINS_REGULAR,
           letterSpacing: 0.5,
           lineHeight: 30,
@@ -49,11 +53,11 @@ const useGlobalStyle = (type) => {
         },
         Title: {
           fontFamily: TYPE_FONT_Famliy.POPPINS_BOLD,
-          fontSize: TYPE_SIZES.FONT_SIZE_36,
+          fontSize: TYPE_SIZES.FONT_SIZE_30,
         },
         Subtitle: {
           fontFamily: TYPE_FONT_Famliy.POPPINS_EXTRA_BOLD,
-          fontSize: TYPE_SIZES.FONT_SIZE_36,
+          fontSize: TYPE_SIZES.FONT_SIZE_18,
         },
         User_N_G_C: {
           fontFamily: TYPE_FONT_Famliy.POPPINS_SEMI_BOLD,
