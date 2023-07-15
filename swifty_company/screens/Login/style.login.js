@@ -4,7 +4,6 @@ import {
   TYPE_FONT_Famliy,
   TYPE_PORDER_RADIUS,
 } from "./../../styles/base.styles";
-
 const Styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -20,6 +19,7 @@ const Styles = StyleSheet.create({
   title: {
     fontSize: TYPE_SIZES.FONT_SIZE_30,
     fontFamily: TYPE_FONT_Famliy.POPPINS_BOLD,
+    color: "black",
   },
   m_h: {
     marginHorizontal: 20,
@@ -32,6 +32,14 @@ const Styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: TYPE_PORDER_RADIUS.BORDER_RADIUS_10,
+  },
+  Paragraph1: {
+    fontSize: TYPE_SIZES.FONT_SIZE_18,
+    fontFamily: TYPE_FONT_Famliy.POPPINS_REGULAR,
+    letterSpacing: 0.5,
+    lineHeight: 30,
+    textAlign: "center",
+    color: "black",
   },
 });
 

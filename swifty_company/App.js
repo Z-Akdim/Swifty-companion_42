@@ -6,9 +6,16 @@ import AppLoading from "expo-app-loading";
 import { useFonts } from "expo-font";
 import Input from "./components/Input";
 import UserCarad from "./components/userCard";
+import AvatarButton from "./components/atoms/avatarButton";
 import { View } from "react-native";
+import HomeIcon from "./components/atoms/icons/homeIcon";
+import HomeButton from "./components/atoms/homeButton";
+import LogoTeam from "./components/atoms/icons/logoTeam";
+import { typeColor } from "./styles/global.styles";
+import HomePage from "./screens/Home";
 export default function App() {
-  const type = "commodore";
+  const type = "pandora";
+  const Colors = typeColor(type);
   let [fontsLoaded] = useFonts({
     "Poppins-Bold": require("./assets/fonts/Poppins-Bold.ttf"),
     "Poppins-ExtraBold": require("./assets/fonts/Poppins-ExtraBold.ttf"),
@@ -24,9 +31,13 @@ export default function App() {
       colors={TYPE_GRADIENTS.LINEAR_GRADIENT_Pink}
       style={styles.container}
     >
-      {/* <Login /> */}
-      <Input type={type} />
-      <UserCarad type={type} error={false} />
+      {/* <Login type={type} /> */}
+      {/* <Input type={type} /> */}
+      {/* <UserCarad type={type} error={false} /> */}
+      {/* <AvatarButton type={type} /> */}
+      {/* <HomeButton type={type} /> */}
+      {/* <LogoTeam Color={Colors.title} /> */}
+      <HomePage type={type} />
     </LinearGradient>
   );
 }
@@ -34,7 +45,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    // alignItems: "center",
+    // justifyContent: "center",
   },
 });
