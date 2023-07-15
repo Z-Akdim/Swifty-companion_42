@@ -7,7 +7,7 @@ import {
 import { typeColor } from "../../styles/global.styles";
 
 const useStyle = (type) => {
-  Colors = typeColor(type);
+  const Colors = typeColor(type);
   return StyleSheet.create({
     containerUserCard: {
       alignItems: "center",
@@ -21,7 +21,7 @@ const useStyle = (type) => {
       backgroundColor: Colors.bgColor,
       justifyContent: "center",
       paddingHorizontal: 10,
-      paddingVertical: 10,
+      paddingVertical: 5,
     },
     imageAvatarStyle: {
       alignItems: "center",
