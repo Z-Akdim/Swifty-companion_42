@@ -22,6 +22,8 @@ const useStyle = (type) => {
       justifyContent: "center",
       paddingHorizontal: 10,
       paddingVertical: 5,
+      borderWidth: 0.5,
+      borderColor: Colors.borderColor,
     },
     imageAvatarStyle: {
       alignItems: "center",
@@ -53,7 +55,7 @@ const useStyle = (type) => {
       fontSize: TYPE_SIZES.FONT_SIZE_30,
       fontFamily: TYPE_FONT_Famliy.POPPINS_SEMI_BOLD,
       textAlign: "center",
-      color: Colors.title,
+      color: Colors.titleColor,
     },
     sousTitle: {
       fontSize: TYPE_SIZES.FONT_SIZE_16,
