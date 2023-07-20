@@ -9,15 +9,16 @@ const useStyle = (type) => {
     () =>
       StyleSheet.create({
         containerAvatarButton: {
-          marginTop: 50,
-          width: 73,
-          height: 73,
+          width: 75,
+          height: 75,
           borderWidth: 3,
-          borderColor: Colors.title,
+          borderColor: Colors.titleColor,
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 100,
           overflow: "hidden",
+          shadowColor: Colors.titleColor,
+          elevation: 12,
         },
         ImageButton: {
           width: "100%",
