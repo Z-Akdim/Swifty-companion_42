@@ -11,7 +11,7 @@ const useStyle = (type) => {
           marginTop: 50,
           width: 73,
           height: 73,
-          backgroundColor: Colors.title,
+          backgroundColor: Colors.titleColor,
           alignItems: "center",
           justifyContent: "center",
           borderRadius: 100,
