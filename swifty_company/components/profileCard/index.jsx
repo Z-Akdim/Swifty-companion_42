@@ -1,8 +1,11 @@
 import { View, Text, Image } from "react-native";
 import useStle from "./style.profileCard";
 import imgP from "../../assets/tanjiro.jpg";
+import FlechIcon from "../atoms/icons/flech";
+import LevelPercentage from "../atoms/levelPercentage/levelPercentage";
 const ProfileCard = (props) => {
   const { type } = props;
+  let nbr = 20;
   const Styles = useStle(type);
   return (
     <View style={Styles.profileCardContainer}>
@@ -23,13 +26,15 @@ const ProfileCard = (props) => {
         </View>
         <View style={Styles.CTow_Bloc2}>
           <Text style={Styles.gradeStyle}>Cursus : </Text>
-          <View>
+          <View style={Styles.flechContent}>
             <Text style={Styles.typeGrade}>42Cursus</Text>
-            <View></View>
+            <FlechIcon type={type} />
           </View>
         </View>
       </View>
-      <View style={Styles.childThree}></View>
+      <View style={Styles.childThree}>
+        <LevelPercentage type={type} percentage={`${nbr}%`} />
+      </View>
     </View>
   );
 };

@@ -10,7 +10,8 @@ const useStle = (type) => {
         profileCardContainer: {
           flex: 0.5,
           borderWidth: 0.5,
-          marginVertical: 21,
+          marginVertical: 13,
+          marginHorizontal: 21,
           borderRadius: 10,
           borderColor: Colors.borderColor,
           backgroundColor: Colors.bgColor,
@@ -75,8 +76,15 @@ const useStle = (type) => {
           alignItems: "center",
           gap: 20,
         },
+        flechContent: {
+          flex: 0.6,
+          flexDirection: "row",
+          alignItems: "center",
+        },
         childThree: {
           flex: 1,
+          paddingHorizontal: 13,
+          marginBottom: -10,
         },
       }),
     [type]
