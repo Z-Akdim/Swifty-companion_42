@@ -11,15 +11,15 @@ const useStyle = ({ type }) => {
           flex: 1,
         },
         navBarStyle: {
-          height: 110,
-          backgroundColor: "blue",
+          height: 120,
           alignItems: "flex-start",
+          marginBottom: -15,
         },
         profileContentStyle: {
-          // backgroundColor: "red",
+          backgroundColor: "red",
           flex: 1,
-          marginHorizontal: 21,
-          // borderRadius: 10,
+          borderTopLeftRadius: 20,
+          borderTopRightRadius: 20,
         },
       }),
     [type]
