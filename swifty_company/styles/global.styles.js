@@ -11,8 +11,9 @@ export const typeColor = (type) => {
       borderColor: "#5D9B5B",
       homeIconColor: "#BBE2B8",
       primaryGreen: "#59AC57",
-      LINEAR_GRADIENT: ["#E5FFE2", "#CEFFCADE", "#E5FFE2"],
+      LINEAR_GRADIENT: ["#BBE2B8", "#CEF4CA", "#BBE2B8"],
       Title: "Commodore",
+      bglevel: "#CEF4CA",
     },
     bois: {
       placHoColor: "#5A8383",
@@ -22,8 +23,9 @@ export const typeColor = (type) => {
       sousTitle: "#50A697",
       homeIconColor: "#B8E2DF",
       primaryGreen: "#50A697",
-      LINEAR_GRADIENT: ["#E0FEFCE3", "#C8FFFCDE", "#E0FEFCE3"],
+      LINEAR_GRADIENT: ["#B8E2DF", "#CAF1F4", "#B8E2DF"],
       Title: "Bois",
+      bglevel: "#CAF1F4",
     },
     freax: {
       placHoColor: "#837A5A",
@@ -32,8 +34,9 @@ export const typeColor = (type) => {
       borderColor: "#B9AF56",
       homeIconColor: "#E2DBB8",
       primaryGreen: "#D5AF67",
-      LINEAR_GRADIENT: ["#FEFFE1E3", "#FEFFC7DE", "#FEFFE1E3"],
+      LINEAR_GRADIENT: ["#E2DBB8", "#F4EBCA", "#E2DBB8"],
       Title: "Freax",
+      bglevel: "#F4EBCA",
     },
     pandora: {
       placHoColor: "#835A7C",
@@ -42,8 +45,9 @@ export const typeColor = (type) => {
       borderColor: "#9B5B7A",
       homeIconColor: "#FFEAF9",
       primaryGreen: "#A6509D",
-      LINEAR_GRADIENT: ["#FFE2F5E3", "#FFD0EFDE", "#FFE2F5E3"],
+      LINEAR_GRADIENT: ["#FFEAF9", "#F4CAF2", "#FFEAF9"],
       Title: "Pandora",
+      bglevel: "#F4CAF2",
     },
   };
   const Color = colors[type];
