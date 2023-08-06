@@ -4,6 +4,7 @@ import img from "../../assets/Commodore_BG.jpg";
 import { typeColor } from "../../styles/global.styles";
 import ProfileCard from "../../components/profileCard";
 import { LinearGradient } from "expo-linear-gradient";
+import ProjectStatus from "../../components/projectStatus";
 const Profile = (props) => {
   const { type } = props;
   const Styles = useStyle(type);
@@ -18,7 +19,9 @@ const Profile = (props) => {
         style={Styles.profileContentStyle}
       >
         <ProfileCard type={type} />
-        <View style={{ flex: 1 }}></View>
+        <View style={Styles.projectContainer}>
+          <ProjectStatus type={type} />
+        </View>
       </LinearGradient>
     </View>
   );

@@ -3,7 +3,6 @@ import { typeColor } from "../../styles/global.styles";
 import { useMemo } from "react";
 
 const useStyle = ({ type }) => {
-  // const Colors = typeColor(type);
   return useMemo(
     () =>
       StyleSheet.create({
@@ -16,10 +15,13 @@ const useStyle = ({ type }) => {
           marginBottom: -15,
         },
         profileContentStyle: {
-          backgroundColor: "red",
           flex: 1,
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
+        },
+        projectContainer: {
+          flex: 1,
+          marginHorizontal: 21,
         },
       }),
     [type]
