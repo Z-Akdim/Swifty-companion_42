@@ -13,6 +13,7 @@ import HomeButton from "./components/atoms/homeButton";
 import LogoTeam from "./components/atoms/icons/logoTeam";
 import { typeColor } from "./styles/global.styles";
 import HomePage from "./screens/Home";
+import Profile from "./screens/Profile";
 export default function App() {
   const type = "pandora";
   const Colors = typeColor(type);
@@ -27,17 +28,15 @@ export default function App() {
     return <AppLoading />;
   }
   return (
-    <LinearGradient
-      colors={TYPE_GRADIENTS.LINEAR_GRADIENT_Pink}
-      style={styles.container}
-    >
+    <LinearGradient colors={Colors.LINEAR_GRADIENT} style={styles.container}>
       {/* <Login type={type} /> */}
       {/* <Input type={type} /> */}
       {/* <UserCarad type={type} error={false} /> */}
       {/* <AvatarButton type={type} /> */}
       {/* <HomeButton type={type} /> */}
-      {/* <LogoTeam Color={Colors.title} /> */}
-      <HomePage type={type} />
+      {/* <LogoTeam Color={Colors.titleColor} /> */}
+      {/* <HomePage type={type} /> */}
+      <Profile type={type} />
     </LinearGradient>
   );
 }
