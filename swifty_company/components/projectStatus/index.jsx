@@ -8,38 +8,49 @@ const ProjectStatus = (props) => {
   const [status, setStatus] = useState({
     project: true,
     available: false,
-    skils: false,
+    skills: false,
   });
-
-  useEffect(() => {
-    console.log("status=>", status);
-  }, [status]);
+  console.log(status);
   return (
     <View style={Styles.containerProject}>
       <View style={Styles.containerTabView}>
-        {["project", "available", "skills"].map((el) => (
+        {["project", "available", "skills"].map((e) => (
           <TouchableOpacity
             style={[
               Styles.tabView,
-              status[el] ? Styles.borderA : Styles.borderD,
+              status[e] ? Styles.borderA : Styles.borderD,
             ]}
             onPress={() =>
-              Object.keys(status).map((e) => {
+              Object.keys(status).map(() => {
                 setStatus({
-                  [el]: true,
+                  [e]: true,
                 });
               })
             }
-            key={el}
+            key={e}
           >
-            <Text style={Styles.tabViewTitleA}>{el}</Text>
+            <Text
+              style={status[e] ? Styles.tabViewTitleA : Styles.tabViewTitleD}
+            >
+              {e}
+            </Text>
           </TouchableOpacity>
         ))}
       </View>
-      {status.project && (
+      {status.project ? (
         <View style={Styles.viewTyopContainer}>
-          <Text>Content</Text>
+          <Text>project</Text>
         </View>
+      ) : status.available ? (
+        <View style={Styles.viewTyopContainer}>
+          <Text>available</Text>
+        </View>
+      ) : (
+        status.skills && (
+          <View style={Styles.viewTyopContainer}>
+            <Text>skils</Text>
+          </View>
+        )
       )}
     </View>
   );

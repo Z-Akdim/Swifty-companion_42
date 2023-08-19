@@ -24,6 +24,7 @@ const useStyle = (type) => {
           justifyContent: "center",
           borderTopRightRadius: 5,
           borderTopLeftRadius: 5,
+          height: 45,
         },
         brderColor: {},
         borderA: {
